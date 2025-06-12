@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del calendario */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas, una por cada día */
+  gap: 10px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background-color: #e6e6e6;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.calendar div:hover {
+  background-color: #90ee90;
+}
+
+.selected {
+  background-color: #2d9cdb;
+  color: white;
+}
+
+.disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* Estilos para el selector de hora */
+.hora-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Estilos del botón de reserva */
+.button-container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2d9cdb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #1c7db8;
+}
+
+/* Estilo del mensaje */
+.message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleccionar Clase de Baile</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>¡Reserva tu clase de baile!</h1>
+    
+    <!-- Calendario -->
+    <div class="calendar" id="calendar"></div>
+    
+    <!-- Selección de hora -->
+    <div class="hora-container" id="hora-container">
+      <label for="hora">Selecciona la hora:</label>
+      <select id="hora">
+        <option value="">Selecciona un día primero</option>
+      </select>
+    </div>
+
+    <!-- Botón para reservar -->
+    <div class="button-container">
+      <button id="reservar" onclick="reservarClase()" disabled>Reservar Clase</button>
+    </div>
+
+    <!-- Mensaje -->
+    <p class="message" id="mensaje"></p>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
